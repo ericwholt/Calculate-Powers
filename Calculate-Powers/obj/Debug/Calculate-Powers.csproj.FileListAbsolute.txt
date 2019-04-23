@@ -1,0 +1,7 @@
+C:\Users\fatmo\Grand Circus\Labs\4\Calculate-Powers\Calculate-Powers\bin\Debug\Calculate-Powers.exe.config
+C:\Users\fatmo\Grand Circus\Labs\4\Calculate-Powers\Calculate-Powers\bin\Debug\Calculate-Powers.exe
+C:\Users\fatmo\Grand Circus\Labs\4\Calculate-Powers\Calculate-Powers\bin\Debug\Calculate-Powers.pdb
+C:\Users\fatmo\Grand Circus\Labs\4\Calculate-Powers\Calculate-Powers\obj\Debug\Calculate-Powers.csprojAssemblyReference.cache
+C:\Users\fatmo\Grand Circus\Labs\4\Calculate-Powers\Calculate-Powers\obj\Debug\Calculate-Powers.csproj.CoreCompileInputs.cache
+C:\Users\fatmo\Grand Circus\Labs\4\Calculate-Powers\Calculate-Powers\obj\Debug\Calculate-Powers.exe
+C:\Users\fatmo\Grand Circus\Labs\4\Calculate-Powers\Calculate-Powers\obj\Debug\Calculate-Powers.pdb
