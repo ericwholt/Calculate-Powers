@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculate_Powers
 {
@@ -10,7 +6,8 @@ namespace Calculate_Powers
     {
         static void Main(string[] args)
         {
-            while (true)
+            bool run = true;
+            while (run)
             {
                 Console.WriteLine("Learn your squares cubes!");
                 Console.Clear();
@@ -23,7 +20,7 @@ namespace Calculate_Powers
                 Console.WriteLine("{0,-11}{1,-11}{2,-11}", "======", "=======", "=====");
                 for (int i = 1; i <= userInput; i++)
                 {
-                    
+
                     int squared = CalculateSquared(i);
                     int cubed = CalculateCube(i);
                     if (squared < 0 || cubed < 0)
@@ -33,12 +30,7 @@ namespace Calculate_Powers
                     }
                     Console.WriteLine("{0,-11}{1,-11}{2,-11}", i, squared, cubed);
                 }
-                Console.WriteLine("Continue (y/n)");
-                string response = Console.ReadLine().ToLower();
-                if (response == "n" || response == "no")
-                {
-                    break;
-                }
+                run = Continue();
 
             }
             Console.Clear();
@@ -50,9 +42,34 @@ namespace Calculate_Powers
         {
             return value * value * value;
         }
+
         static int CalculateSquared(int value)
         {
             return value * value;
+        }
+
+        static bool Continue()
+        {
+            Console.WriteLine("Continue (y/n)");
+            string response = Console.ReadLine().ToLower();
+            bool run = true;
+
+            if (response == "n" || response == "no")
+            {
+                run = false;
+            }
+            else if (response == "y" || response == "yes")
+            {
+                run = true;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input please try again.");
+                Continue();
+            }
+
+
+            return run;
         }
     }
 
